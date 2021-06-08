@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Stats preview card component</title>
+
+
+
 </head>
+
 <body>
 
-  Get insights that help your business grow.
+    <div class="box">
+        <div class="image">
+            <picture>
+                <source srcset="./assets/images/image-header-mobile.jpg" media="(max-width: 375px)">
+                <source srcset="./assets/images/image-header-desktop.jpg">
+                <img src="./assets/images/image-header-desktop.jpg" alt="talks" style="width:auto">
+            </picture>
+        </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
 
-  10k+ companies
-  314 templates
-  12m+ queries
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+        <div class="text">
+            <div class="main-heading">
+                <h1> Get <span class="insights">insights </span>that help your business grow.</div> <br></h1>
+            <div class="main-paragraph">
+                <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            </div>
+            <br>
+            <div class="stat-headings">
+                <div class="one"><span class="stat-top">10k+</span>
+                    <span class="stat-bottom">COMPANIES</span></div>
+
+                <div class="two"><span class="stat-top">314</span> <span class="stat-bottom">TEMPLATES</span></div>
+
+                <div class="three"><span class="stat-top">12M+</span> <span class="stat-bottom"> QUERIES</span></div>
+            </div>
+        </div>
+
+
+
+
+        <!--
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Faraz</a>.
+    </div>
+    -->
+    </div>
 </body>
+
 </html>
