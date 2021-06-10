@@ -7,6 +7,10 @@
 }
 
 img {
+    /*PRO TIP use max-width:100% and height:auto for responsive image!*/
+    max-width: 100%;
+    height: auto;
+    /* I mistakenly used .img but img isnt a class!*/
     opacity: 0.4;
 }
 
@@ -93,4 +97,58 @@ body {
 
 .attribution {
     color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        background-color: hsl(244, 38%, 16%);
+        border: 0px solid;
+        min-height: 346px;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        width: 330px;
+        margin-right: 5px;
+        margin-left: 15px;
+        margin-bottom: 80px;
+        margin-top: 30px;
+    }
+    img {
+        margin-bottom: -5px;
+    }
+    .main-heading {
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        width: 285px;
+        text-align: center;
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .main-paragraph {
+        margin-top: -30px;
+        font-size: 16px;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        width: 290px;
+        text-align: center;
+        margin-left: 25px;
+        margin-bottom: -10px;
+    }
+    .stat-headings {
+        margin-top: 20px;
+        text-align: justify;
+    }
+    .one,
+    .two,
+    .three {
+        display: block;
+        width: 100px;
+        margin-left: 35%;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 30px
+    }
 }
